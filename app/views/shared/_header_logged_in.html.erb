@@ -1,0 +1,4 @@
+<div class="logged-in">
+  <a class="button button-primary" href="/<%= session[:user_type].downcase %>s/submissions">Home</a>
+  <%= link_to 'Logout', logout_path, method: "DELETE", class: "button button-primary" %>
+</div>

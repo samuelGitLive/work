@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AdmissionsTracker</title>
+	<%= stylesheet_link_tag    'application', media: 'all' %>
+	<%= javascript_include_tag 'application' %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+
+	<header>
+
+		<%= render 'shared/header_logo' %>
+		<nav class="float-right">
+			<% if session[:user_type] %>
+			<%= render 'shared/header_logged_in' %>
+			<% else %>
+			<%= render 'shared/header_public' %>
+			<% end %>
+		</nav>
+
+	</header>
+	<div class="page-wrapper">
+		<%= yield %>
+	</div>
+
+	<%= render 'shared/footer' %>
+
+	<!-- Thinking by Gregor Cresnar from the Noun Project -->
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<div class="video">
+	<%= video_tag "https://s3.amazonaws.com/admitron5000/typing1.mp4", :size => "500x500", :autobuffer => true, :autoplay => true, :loop => true, :id => "welcomevid", :controls => false %> 
+	<div class="video-text">
+		<h1>Learn Something <span>New</span></h1>
+		<a id="scroll-button" href=".welcometext">&#10095;</a>
+	</div>
+</div>
+
+<div class="welcometext">
+	<h1 class="thousands">Thousands </h1>
+	<h1> of lives changed</h1>
+	<h1>with the click of a button</h1>
+	<a class="button button-primary" href="/courses">View All Courses</a>
+		
+</div>
+
+<div class="testimonials">
+	<% @randoms.each do |random| %> 
+		<div class="testimonial">
+			<img class="reference" src="<%= random["user"]["picture"]["medium"] %>">
+			<blockquote>
+		  	<q>We hired <%= FFaker::Name.first_name %> to help <%= FFaker::Company.bs %>.</q/>
+		  <p>— <%= random["user"]["name"]["first"].capitalize %> <%= random["user"]["name"]["last"].capitalize %>, <%= FFaker::Company.name %>, <%= FFaker::Job.title %></p>
+		</blockquote>
+		</div>
+	<% end %>
+</div>
+
+
+
+

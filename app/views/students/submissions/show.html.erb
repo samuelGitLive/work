@@ -1,0 +1,53 @@
+<div class="student-show">
+
+	<h1 class="app-header"><%= @submission.course.subject %> Application for <%= @submission.student.f_name %> <%= @submission.student.l_name %></h1>
+
+	<div class="app-box">
+		<br>
+		<h3 class="info">Application Information:</h3>
+		<p><strong>First Name:</strong> <%= @submission.student.f_name %></p>
+		<p><strong>Last Name:</strong> <%= @submission.student.l_name %></p>
+		<p><strong>Email:</strong> <a href="mailto:<%= @submission.student.email %>?Subject=Your%20Application"><%= @submission.student.email %></p></a>
+		<p><strong>Phone:</strong> <%= @submission.student.phone_number %></p>
+		<p><strong>Date of Submission:</strong> <%= @submission.created_at.strftime('%m/%d/%y %I:%M %P') %></p>
+	</div>
+
+	<div class="course-box">
+		<br>
+		<h3 class="info">Course Information:</h3>
+		<p><strong>Course:</strong> <%= @submission.course.subject %></p>
+		<p><strong>Location:</strong> <%= @submission.course.location %></p>
+		<p><strong>Course Dates:</strong> <%= @submission.course.start_date.strftime('%m/%d/%y') %> - <%= @submission.course.end_date.strftime('%m/%d/%y') %></p>
+		<p><strong>Cost of Course:</strong> $<%= number_with_precision(@submission.course.price, :precision => 2, :delimiter => ',') %></p>
+		<br>
+	</div>
+
+</div>
+
+<div class="status-box"> 
+	<h3 class="status">Application Status:
+		<% if @submission.status == 'accepted' %> 
+		<img class="status-gifs" src="/images/accepted.gif">
+		<% elsif @submission.status == 'rejected' %> 
+	<!-- 	<img class="status-gifs" src="http://giphy.com/gifs/animatedtext-transparent-animatedtext-83iW2g0TW35lK"> -->
+		<span id="rejected">REJECTED!</span>
+		<% else %> 
+		<%= @submission.status.capitalize %>
+		<% end %> 
+	</h3>
+</div>
+
+<div class="submission-attachment">
+	<p><strong>Application:</strong></p>
+	<%= @submission.render_attachment if @submission.has_attachment %>
+	<br>
+	<p><em>If any of this information is incorrect or needs to be updated, please contact your Admissions Counselor.</em></p>
+	<a class="button button-primary" id="submission-page-button" href="/students/submissions">Back to Submissions Page</a>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,593 @@
+html, body {
+	height: 100%;
+	position: relative;
+}
+
+.page-wrapper {
+	min-height: 100%;
+	margin-bottom: -51.111px;
+}
+
+.page-wrapper:after {
+	content: "";
+	display: block;
+}
+
+.site-footer,
+.page-wrapper:after {
+	height: 51.111px;
+}
+
+/*----- Header ------*/
+
+header {
+	padding: 0 10px;
+	background-color: #eee; 
+	position: relative;
+}
+
+.logo {
+	padding: 0.25em;
+	display: inline-block;
+}
+
+.logo img {
+	height: 3.5em;
+	width: 4.5em;
+}
+
+nav {
+	position: absolute;
+	top: 50%;
+	right: 2em;
+	transform: translateY(-50%);
+}
+
+nav .button {
+	margin-bottom: 0; 
+}
+
+
+/*----- Footer ------*/
+
+.site-footer {
+	position: relative;
+	bottom: 0;
+	height: 3.4em;
+	margin-top: 1em;
+	width: 100%;
+	background-color: #eee; 
+	bottom: 0;
+}
+
+#trello {
+	margin-left: 2em; 
+}
+
+.social-links img {
+	width: 2em;
+	margin: 0.5em 0.5em 0 0.5em;
+	border-radius: 50%;
+}
+
+.admitron {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	margin: 0;
+	height: 1.7em;
+	font-size: 2em;
+	font-family: Helvetica;
+}
+
+footer a {
+	color: white;
+}
+
+.admitron span {
+	color: #33C3F0;
+}
+
+/*----- Public ------*/
+
+.video {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#welcomevid {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.video-text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 30px #000;
+	font-size: 72px;
+}
+
+.video-text h1 {
+	font-size: 1.3em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.video-text span {
+	color: #33C3F0;
+}
+
+#scroll-button {
+	transform: rotate(90deg);
+	display: inline-block;
+	text-decoration: none;
+	transition: all 0.7s;
+	color: #fff;
+}
+
+#scroll-button:hover {
+	text-shadow: 0 0 20px rgba(51, 195, 240, 0.6);
+	color: #33C3F0;
+}
+
+.welcometext {
+	padding: 50px; 
+	text-align: center; 
+}
+
+.thousands {
+	color: #33C3F0;
+	font-size: 5em;
+}
+
+.button_link {
+	color: white;
+}
+
+.testimonials {
+	height: 605px;
+}
+
+.testimonial {
+	width: 32%;
+	height: 600px;
+	/*margin: 0 5px;*/
+	margin-right: .25em;
+	border: solid #cccccc 1px; 
+	float: left;
+	text-align: center;
+	font-size: 30px; 
+}
+
+.testimonial:nth-of-type(1) {
+	margin-left: .75em;
+}
+
+.testimonial:nth-of-type(3) {
+	margin-right: 0;
+}
+
+.reference {
+	margin: 5px auto;
+	margin-top: 20px; 
+	border-radius: 50%;
+	overflow: hidden;
+	width: 150px;
+  height: 150px;
+}
+
+/* -- SEARCH -- */
+
+
+#search {
+	display: block;
+	margin: 10px auto;
+	width: 200px;
+	padding: 10px;
+	border-radius: 6px;
+	outline: none;
+	border: 1px solid grey;
+}
+
+#search:focus {
+	outline: none;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+
+/* -- FORM -- */
+
+.login {
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	font-size: 1em;
+}
+.login h3 {
+	font-style: boldest;
+}
+
+.login input {
+	width: 100%;
+	display: inline-block;
+}
+
+.login input[type="submit"], .apply input[type="submit"] {
+	background-color: #e74c3c;
+	color: white;
+	border: #e74c3c;
+}
+
+.no-account {
+	border: solid #D1D1D1 1px;
+	padding: 1em;
+	text-align: center;
+}
+
+/* -- COURSES -- */
+
+.courses {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	font-size: 1em;
+	padding: 3em;
+}
+
+.courses img {
+	width: 100%;
+}
+
+.courses h1 {
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+.courses h3 {
+	font-style: boldest;
+}
+
+.courses a {
+	text-decoration: none;
+}
+
+.courses 
+	a:link,
+	a:visited {
+		color: black;
+	}
+
+/* -- COURSE -- */
+
+div.course div {
+	display: inline-block;
+}
+
+.course {
+	border-top: solid black 1px;
+}
+
+.course-logo,
+.course-info,
+.course-description {
+	padding: 0;
+	margin-right: 4em;
+	width: 20%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.course-description {
+	padding-top: 2em;
+	margin-right: 4em;
+	width: 40%;
+}
+
+.course-info {
+	padding-top: 2em;
+}
+
+.course-info h4 {
+	border-bottom: solid #e74c3c 1px;
+}
+
+.class-container {
+  position: relative;
+	z-index: 8888;
+	height: 100%;
+	width: 100%;
+  text-align: center;
+  margin-top: 4em;
+}
+
+.class-info {
+	background-color: #eeeeee;
+	padding-left: 3.25em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	width: 15%;
+  display: inline-block;
+  text-align: left;
+  margin-right: 3em;
+	vertical-align: top;
+}
+
+.class-filler {
+	width: 40%;
+  display: inline-block;
+  text-align: left;
+	vertical-align: top;
+}
+
+.course-image {
+	position: relative;
+}
+
+.course-image:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	left: 0;
+}
+
+.course-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+ 
+.course-name {
+  color: white;
+  text-transform: uppercase;
+  font-size: 5em;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* -- OFFICERS/INSTRUCTORS/STUDENTS INDEX -- */
+
+.index-pages h1, .apply h1, .questionnaire h1 {
+	margin-top: 1.5em;
+	margin-bottom: 1.25em;
+	border-bottom: solid #D1D1D1 1px;
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:center;
+}
+
+#search {
+		margin-bottom: 2.5em;
+}
+
+table.index-pages {
+	margin-left:auto; 
+  margin-right:auto;
+}
+
+/* -- STUDENT SHOW -- */
+
+.app-header {
+	text-align: center; 
+	margin: 30px; 
+}
+
+.app-box {
+	float: left;
+	width: 32%;
+	height: 25em;
+	font-size: 1em; 
+	margin: 5%; 
+	margin-left: 12%; 
+	text-align: center; 
+	border: solid 1px #bbbbbb; 
+}
+
+.course-box {
+	float: right;
+	width: 32%;
+	height: 25em;
+	font-size: 1em; 
+	margin: 5%; 
+	margin-right: 12%;
+	text-align: center; 
+	border: solid 1px #bbbbbb; 
+}
+
+.status-box {
+	clear: both;
+	text-align: center;
+}
+
+.status {
+	font-size: 4em; 
+}
+
+.info {
+	color: #33C3F0;
+}
+
+.submission-attachment {
+	font-size: 1.5em; 
+	margin-left: 12%;
+}
+
+.notes {
+	color: #e74c3c
+}
+
+/* -- OFFICER SHOW -- */
+
+.officer-show-name {
+	border-bottom: solid #bbbbbb 1px;
+	color: #33C3F0;
+}
+
+.results {
+	border-bottom: solid #bbbbbb 1px;
+}
+
+.gravatar {
+	margin: 3.5em; 
+}
+
+.officer-student-info {
+	text-align: center; 
+	margin-left: auto;
+  margin-right: auto; 
+  width: 40%; 
+}
+
+.instruct-officer-buttons {
+	text-align: center; 
+}
+
+/*INSTRUCTOR SHOW */
+
+.view_type {
+	text-align: center; 
+	margin-left: auto;
+  margin-right: auto; 
+  width: 40%; 
+  padding-top: 1em; 
+}
+
+/* -- APPLY -- */
+
+.apply h3 {
+	text-align: center;
+}
+
+.prompt {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1.5em;
+}
+
+.apply input[type="submit"] {
+	margin-top: 0;
+	width: 100%;
+}
+
+.apply label, .apply input[type="file"] {
+	display: inline;
+}
+
+.apply ol {
+	margin-bottom: 3em;
+}
+
+.apply label {
+	padding-bottom: 2em;
+	margin-right: 2em;
+}
+
+/* -- QUESTIONNAIRE -- */
+
+.questionnaire h1 {
+	margin-bottom: 0;
+}
+
+#new_phonescreen, .timer-object {
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+.timer-object {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#timer {
+	font-size: 10em;
+}
+
+#start-timer {
+	color: white;
+	background-color: #33C3F0;
+	border: #e74c3c;
+}
+
+#new_phonescreen, #new_interview {
+	border: solid #D1D1D1 1px;
+	padding: 1em;
+}
+
+#new_phonescreen input[type="submit"], #new_interview input[type="submit"] {
+	width: 100%;
+	background-color: #e74c3c;
+	border: #e74c3c;
+	color: white;
+}
+
+#new_phonescreen label, #new_interview label {
+	display: inline;
+	padding-left: .5em;
+}
+
+#phonescreen_notes, #interview_notes {
+	padding: 0;
+	width: 100%;
+	resize: vertical;
+  overflow: auto;
+}
+
+#new_interview {
+	margin-top: 3em;
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+#new_interview label, #new_phonescreen label {
+	font-weight: 400;
+}
+
+/*REJECTED */
+
+#rejected {
+  font-family: Impact;
+  color: #e74c3c;
+  text-shadow: 2px 2px 0 black;
+  -webkit-text-stroke: 2px black;
+  transform: rotate(-20deg) scale(1.5);
+  display: inline-block;
+  margin-left: 0.3em;
+  transition: all 0.7s ease-in;
+  opacity: 0;
+}
+
+#rejected.rejected-show {
+  transform: rotate(-10deg) scale(1);
+	opacity: 1;
+}
+
+
+
+
